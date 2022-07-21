@@ -7,9 +7,9 @@ services:
       - DISPLAY=$DISPLAY
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-      - $HOME/.Xauthority:/home/romulo/.Xauthority
+      - $HOME/.Xauthority:/home/<YOUR_USER_GROUP>/.Xauthority
     command: ["bash", "-c", "while sleep 1000; do :; done"]
-    working_dir: /home/romulo
+    working_dir: /home/<YOUR_USER_GROUP>
     network_mode: "host"
     restart: always
 networks:
