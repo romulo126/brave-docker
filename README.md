@@ -10,6 +10,8 @@ _____
 - This docker will run the BRAVE browser without the need to install it locally on your machine
 ___
 ### RUN
+- ``` replace <YOUR_USER_GROUP> with the machine's user name ``` 
+
 - ``` docker-composer up -d --build ```
 
 - ``` docker exec -t brave_docker brave-browser  --disable-dev-shm-usage --no-sandbox --disable-gpu```
